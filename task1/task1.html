@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__menu">
+        <div class="header__menu__left">CSS Практика</div>
+        <ul class="header__menu__main">
+          <li><a href="#">Головна</a></li>
+          <li><a href="#gradients">Градієнти</a></li>
+          <li><a href="#image">Зображення</a></li>
+          <li><a href="#cards">Картки</a></li>
+          <li><a href="#contact">Контакт</a></li>
+        </ul>
+        <button class="header__menu__button">Почати <span>→</span></button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section1" id="gradients">
+        <div class="section1_text">
+          <p>Типи градієнтів</p>
+          <h2>Різновиди CSS градієнтів</h2>
+        </div>
+
+        <div class="section1__cards">
+          <div class="card">
+            <div class="card__visual card__visual--linear"></div>
+            <div class="card__content">
+              <h3 class="card__title">Лінійний градієнт</h3>
+              <div class="card__code">
+                <code>linear-gradient(135deg, #667eea, #764ba2)</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__visual card__radial"></div>
+            <div class="card__content">
+              <h3 class="card__title">Радіальний градієнт</h3>
+              <div class="card__code">
+                <code>radial-gradient(circle, #f093fb, #f5576c, #4facfe)</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__visual card__cononic"></div>
+            <div class="card__content">
+              <h3 class="card__title">Конічний градієнт</h3>
+              <div class="card__code">
+                <code>conic-gradient(#06b6d4, #8b5cf6, #ec4899, #f97316)</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__visual card__layers"></div>
+            <div class="card__content">
+              <h3 class="card__title">Багатошаровий</h3>
+              <div class="card__code">
+                <code
+                  >linear-gradient(217deg, red) + linear-gradient(127deg, green)
+                  + ...</code
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__visual card__sun"></div>
+            <div class="card__content">
+              <h3 class="card__title">Сонячний захід</h3>
+              <div class="card__code">
+                <code>linear-gradient(to right, #f83600, #f9d423)</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__visual card__avrora"></div>
+            <div class="card__content">
+              <h3 class="card__title">Аврора</h3>
+              <div class="card__code">
+                <code
+                  >linear-gradient(to right, #0f2027, #203a43, #2c5364)</code
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner" id="image">
+        <div class="banner__container">
+          <p class="banner__subtitle">Фонове зображення + радіальний overlay</p>
+          <h2 class="banner__title">background-image з gradient overlay</h2>
+          <p class="banner__text">
+            Фото гори поєднано з
+            <span class="banner__highlight">radial-gradient</span> overlay. Це
+            дозволяє тексту добре читатися на будь-якому фоні.
+          </p>
+        </div>
+      </section>
+
+      <section class="mesh_gradient" id="cards">
+        <div class="mesh_gradient__text">
+          <p>Mesh Gradient</p>
+          <h2>Накладання радіальних градієнтів</h2>
+        </div>
+        <div class="mesh_gradient__cards">
+          <div class="mesh_gradient__card card_color">
+            <h3>Тільки колір</h3>
+            <p>background: linear-gradient</p>
+          </div>
+          <div class="mesh_gradient__card card_overlay">
+            <h3>Зображення + overlay</h3>
+            <p>background-image + linear overlay</p>
+          </div>
+          <div class="mesh_gradient__card card_mesh">
+            <h3>Радіальний mesh</h3>
+            <p>radial-gradient × 2</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="horizontal-banner">
+        <div class="horizontal-banner__container">
+          <div class="horizontal-banner__content">
+            <p class="horizontal-banner__subtitle">Background-attachment</p>
+            <h2 class="horizontal-banner__title">
+              Лінійний overlay по горизонталі
+            </h2>
+            <p class="horizontal-banner__text">
+              Тут overlay будується зліва направо: від майже непрозорого чорного
+              до слабо прозорого. Це залишає зображення видимим з правого боку.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <p class="footer__title">CSS Практика — Градієнти & Фони</p>
+      <p class="footer__credits">Зроблено для навчання • 2026</p>
+    </footer>
+  </body>
+</html>
