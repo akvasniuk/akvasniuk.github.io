@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a4bf19ad2d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__menu">
+        <div class="header__menu__logo">Flex<span>Code</span></div>
+        <div class="header__menu__bar"><i class="fa-solid fa-bars"></i></div>
+        <ul class="header__menu__main">
+          <li>
+            <a href="#">Courses</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Docs</a>
+          </li>
+        </ul>
+        <div class="header__menu__buttons">
+          <button>Log In</button>
+          <button>Sign Up</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <section class="hero__text">
+          <h1>Master the Layout Grid with Flexbox</h1>
+          <p>
+            Learn semantic HTML and CSS properties by building real-world UI
+            components <br />
+            layout structures from scratch
+          </p>
+        </section>
+        <div class="hero__buttons">
+          <button>Get Started</button>
+          <button>View Curriculumn</button>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__text">
+          <h3>Explore Our Learning Paths</h3>
+          <p>
+            Hand-picked interactive challenges to improve layout engineering
+            skills
+          </p>
+        </div>
+
+        <section class="features__cards">
+          <div class="card card-red">
+            <div class="card-icon">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <h3>Flexbox Fundamentals</h3>
+            <p>
+              Learn main-axis configuration, cross-axis distribution rules, and
+              working with modern layout dimensions.
+            </p>
+            <div>
+              <a href="#">Explore <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="card card-blue">
+            <div class="card-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <h3>Advanced Layouts</h3>
+            <p>
+              Build real nested app cards, explicit component frameworks,
+              dynamic application flows, and side panels.
+            </p>
+            <div>
+              <a href="#">Explore <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="card card-green">
+            <div class="card-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>Build a Dashboard</h3>
+            <p>
+              Create full page distributions combining content sections, dynamic
+              sidebars, grids, and modular blocks.
+            </p>
+            <div>
+              <a href="#">Explore <span>→</span></a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__credits">Copyright © flexCode. All rights reserved.</p>
+      <div class="footer__icons">
+        <div><i class="fa-brands fa-x-twitter"></i></div>
+        <div><i class="fa-solid fa-globe"></i></div>
+        <div><i class="fa-solid fa-camera-retro"></i></div>
+      </div>
+    </footer>
+  </body>
+</html>
