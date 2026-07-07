@@ -101,3 +101,5 @@ generatedArray = generateArray(10);
 console.log("Unsorted array:", generatedArray);
 sortedArray = insertionSort(generatedArray);
 console.log("Insertion sort:", sortedArray);
+
+export { generateArray, bubbleSort, insertionSort, selectionSort };

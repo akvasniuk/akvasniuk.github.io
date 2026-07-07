@@ -4,8 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS_Tasks_1_Arrays_Cycles</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <header>
+      <h1>Sorting Algorithms</h1>
+      <div class="controls-wrapper">
+        <div class="numbers">
+          <div>
+            <label for="arrLength">Array length:</label>
+            <input type="number" id="arrLength" value="10" />
+          </div>
+          <div>
+            <label for="maxEl">Max element:</label>
+            <input type="number" id="maxEl" value="100" />
+          </div>
+        </div>
+      </div>
+
+      <button id="generateBtn" class="btn-secondary">Generate new array</button>
+
+      <button id="sortBtn">Sort</button>
+    </header>
+    <main>
+      <section class="algo-card">
+        <h2 class="bubble-sort-title">Bubble Sort</h2>
+
+        <div class="result-row">
+          <span class="label">Unsorted Array:</span>
+          <div id="bubble-unsorted">Натисніть "Generate"</div>
+        </div>
+
+        <div class="result-row">
+          <span class="label">Sorted Array:</span>
+          <div id="bubble-sorted">—</div>
+        </div>
+      </section>
+
+      <section class="algo-card">
+        <h2 class="selection-sort-title">Selection Sort</h2>
+
+        <div class="result-row">
+          <span class="label">Unsorted Array:</span>
+          <div id="selection-unsorted">Натисніть "Generate"</div>
+        </div>
+
+        <div class="result-row">
+          <span class="label">Sorted Array:</span>
+          <div id="selection-sorted">—</div>
+        </div>
+      </section>
+
+      <section class="algo-card">
+        <h2 class="insertion-sort-title">Insertion Sort</h2>
+
+        <div class="result-row">
+          <span class="label">Unsorted Array:</span>
+          <div id="insertion-unsorted">Натисніть "Generate"</div>
+        </div>
+
+        <div class="result-row">
+          <span class="label">Sorted Array:</span>
+          <div id="insertion-sorted">—</div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" type="module"></script>
+    <script src="domScript.js" type="module"></script>
   </body>
 </html>

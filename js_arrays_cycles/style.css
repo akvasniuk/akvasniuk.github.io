@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #212529;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #ffffff;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1d20;
+  letter-spacing: -0.5px;
+}
+
+.controls-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.numbers {
+  display: flex;
+  gap: 20px;
+}
+
+.numbers > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.numbers input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+  color: #212529;
+  text-align: center;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    opacity 0.2s;
+}
+
+#sortBtn {
+  background: #1f7ee3;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#sortBtn:hover {
+  background: #1565c0;
+}
+
+.btn-secondary:hover {
+  background: #d5d5d5;
+}
+
+main {
+  background: #ecedef;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.algo-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.algo-card h2 {
+  margin-bottom: 15px;
+}
+
+.result-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.result-row .label {
+  min-width: 130px;
+  font-weight: 500;
+  color: #555;
+}
+
+.array-output {
+  font-family: Courier, monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  background-color: #e8f2fe;
+  color: #1f7ee3;
+  border: 1px solid #b3d7ff;
+
+  padding: 10px 15px;
+  border-radius: 6px;
+  flex-grow: 1;
+
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.5;
+}
+
+.array-output::before {
+  content: "[";
+}
+.array-output::after {
+  content: "]";
+}
